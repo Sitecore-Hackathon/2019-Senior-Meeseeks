@@ -18,11 +18,10 @@ Finally a radial diagram will be displaed on the Product page to show the predic
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
+This module has the following dependencies:
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+- Sitecore Habitat running on the Sitecore xperience  Initial release.
+- Sitecore License
 
 ## Installation
 
@@ -54,7 +53,9 @@ Remember you are using Markdown, you can provide code samples too:
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+The user must login to the Sitecore habitat site. Once logged click on the products menu option located on the header.
+
+
 
 Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
 
