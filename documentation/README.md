@@ -1,16 +1,18 @@
-# Documentation
-
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
+# Senior Meeseeks: Machine Learning applied to Xconnect module
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Best use of xConnect and/or Universal Tracker
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+The purpose of this module is to gather profiling information of the users based on their interactions, this information is displayed on the Product page as a proof of concept. This wa it can help the Content Editor or the Marketer have profiling information, which can later be used to personalize the user experience on the site.
+
+The user is authenticated on the site, then the user will browse through several product pages which have been created for this module. There are around twenty product pages which are Bicycle themed. The user interactions are stored as goals in xDB and retrieved in the system using the xConnect client component. 
+
+Once the user has navegated in some product pages, the system has enough analytic data to send to the machine learning module hosted in Azure to process this data and get the user profiled. The Azure ML takes as input the users interactions and returns a profile of the user based on Bartle's taxonomy of player types. This profiles can be used to personalize the site to enahce the users engagement. 
+
+Bartle taxonomy of player types can profile the user in one of four categories: 
+
+![Image](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjI_6-bvOTgAhVxHDQIHQUfB3UQjRx6BAgBEAU&url=https%3A%2F%2Fhypixel.net%2Fthreads%2Fphoenixinfo-player-psychology-and-bartles-taxonomy.1097710%2F&psig=AOvVaw3r84X7bZ0CnUtlDaec2-t_&ust=1551650774179180)
 
 ## Pre-requisites
 
