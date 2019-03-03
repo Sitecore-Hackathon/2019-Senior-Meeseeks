@@ -49,4 +49,4 @@ Once there are enough interactions the machine learning server will return a gam
 
 ## Video
 
-[![Team Video](https://www.youtube.com/watch?v=uCPbSvto3AI&feature=youtu.be)
+[Team Video](https://www.youtube.com/watch?v=uCPbSvto3AI&feature=youtu.be)
