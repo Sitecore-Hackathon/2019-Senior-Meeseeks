@@ -49,4 +49,4 @@ Once there are enough interactions the machine learning server will return a gam
 
 ## Video
 
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+[![Team Video](https://www.youtube.com/watch?v=uCPbSvto3AI&feature=youtu.be)
