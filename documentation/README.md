@@ -12,9 +12,11 @@ Once the user has navigated in some product pages, the system has enough analyti
 
 Bartle taxonomy of player types can profile the user in one of four categories: 
 
-![Image](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/blob/master/documentation/images/Capture.PNG)
+![Image](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/blob/master/documentation/images/Capture2.JPG)
 
 Finally a radial diagram will be displaed on the Product page to show the predicted profile retrieved from the Azure ML service.
+
+![Image](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/blob/master/documentation/images/Capture3.JPG)
 
 ## Pre-requisites
 
@@ -37,19 +39,13 @@ No configuration is needed.
 
 The user must login to the Sitecore habitat site. Once logged click on the products menu option located on the header.
 
+After this a list of bike products will appear.
 
+The intention is that the user simulates browsing though these products in order to xConnect to capture more information:
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+![Image](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/blob/master/documentation/images/Capture.JPG)
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
+Once there are 
 
 ## Video
 
