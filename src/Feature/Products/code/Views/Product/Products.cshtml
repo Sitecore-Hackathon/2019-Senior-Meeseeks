@@ -1,0 +1,67 @@
+﻿@using Sitecore.Foundation.Dictionary.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc.Configuration
+@model Sitecore.Feature.Product.Models.ProductsDto
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+    <title>Sitecore </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+<!-- Page Content -->
+<!-- Items Starts Here -->
+<div class="featured-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="section-heading">
+                    <div class="line-dec"></div>
+                    <h1>Products</h1>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <div id="filters" class="button-group">
+                    <button class="btn btn-primary" data-filter="*">All Products</button>
+                    <button class="btn btn-primary" data-filter=".new">Newest</button>
+                    <button class="btn btn-primary" data-filter=".low">Low Price</button>
+                    <button class="btn btn-primary" data-filter=".high">Hight Price</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="featured container no-gutter">
+
+    <div class="row posts">
+        @foreach (var product in Model.Products)
+        {
+            <div class="item new col-md-4">
+                <a href="@product.Url">
+                    <div class="featured-item">
+                        <img src="@product.Img" alt="">
+                        <h4>@product.Title</h4>
+                        <h6>$@product.Price</h6>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+<!-- Featred Page Ends Here -->

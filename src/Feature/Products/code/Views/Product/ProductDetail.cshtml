@@ -1,0 +1,324 @@
+﻿@using Sitecore.Feature.Product
+@using Sitecore.Foundation.Dictionary.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc.Configuration
+@model Sitecore.Feature.Product.Models.ProductDto
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+    <title>Sitecore </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/flex-slider.css">
+    <link rel="stylesheet" href="/assets/css/owl.css">
+
+</head>
+
+<body>
+
+    <!-- Pre Header -->
+    <div id="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span>Suspendisse laoreet magna vel diam lobortis imperdiet</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product" data-productid="{8A806A22-85B5-4546-9518-27624CCBC3A2}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Single Product</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-slider">
+                        <div id="slider" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image1, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image2, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image3, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image4, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                        <div id="carousel" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image1, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image2, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image3, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <li>
+                                    @Html.Sitecore().Field(Templates.Products.Fields.Image4, Model.Item, new { @class = "img-responsive" })
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-content">
+                        <h4>Single Product Name</h4>
+                        <h6>$55.00</h6>
+                        <p>
+                            Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu.
+                            Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id,
+                            dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit.
+                        </p>
+                        <span>7 left on stock</span>
+                        <form action="" method="get">
+                            <label for="quantity">Quantity:</label>
+                            <input name="quantity" type="quantity" class="quantity-text" id="quantity"
+                                   onfocus="if(this.value == '1') { this.value = ''; }" onBlur="if(this.value == '') { this.value = '1';}"
+                                   value="1">
+                            <input type="submit" class="button interaction" value="Order Now!" data-interaction="1">
+                        </form>
+                        <div class="down-content">
+                            <div class="categories">
+                                <h6>Category: <span><a href="#">Pants</a>,<a href="#">Women</a>,<a href="#">Lifestyle</a></span></h6>
+                            </div>
+                            <div class="share">
+                                <h6>
+                                    Share: <span>
+                                        <a class="interaction" href="#" data-interaction="2"><i class="fa fa-facebook"></i></a><a href="#" class="interaction" data-interaction="3">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a><a href="#" class="interaction" data-interaction="4"><i class="fa fa-twitter"></i></a>
+                                    </span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="interaction" data-interaction="5" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Summary</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="interaction" data-interaction="6" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Specs</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="interaction" data-interaction="7" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Review</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--row-->
+    </div>
+
+    <!-- Single Page Ends Here -->
+    <!-- Similar Starts Here -->
+    <!-- Similar Ends Here -->
+    <!-- Subscribe Form Starts Here -->
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Subscribe now!</h1>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <p>
+                            Godard four dollar toast prism, authentic heirloom raw denim messenger bag gochujang put a bird on it
+                            celiac readymade vice.
+                        </p>
+                        <div class="container">
+                            <form id="subscribe" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input name="email" type="text" class="form-control" id="email"
+                                                   onfocus="if(this.value == 'Your Email...') { this.value = ''; }"
+                                                   onBlur="if(this.value == '') { this.value = 'Your Email...';}" value="Your Email..."
+                                                   required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Subscribe Now!</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Form Ends Here -->
+    <!-- Footer Starts Here -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="//via.placeholder.com/122x26" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">How It Works ?</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Ends Here -->
+    <!-- Sub Footer Starts Here -->
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque adipis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sub Footer Ends Here -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="/assets/js/custom.js"></script>
+    <script src="/assets/js/flex-slider.js"></script>
+    <script src="/assets/js/isotope.js"></script>
+    <script src="/assets/js/owl.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script>zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/"; ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script>
+        var myConfig = {
+            "type": "radar",
+            "plot": {
+                "aspect": "line"
+            },
+            scaleV: {
+                visible: true,
+                values: '0:100:0'
+            },
+            scaleK: {
+                values: '1:4:1',
+                labels: ['Explorer', 'Killer', 'Socializer', 'Archiever'],
+                item: {
+                    fontColor: '#607D8B',
+                    backgroundColor: "white",
+                    borderColor: "#aeaeae",
+                    borderWidth: 1,
+                    padding: '5 10',
+                    borderRadius: 10
+                },
+                refLine: {
+                    lineColor: '#c10000'
+                },
+                tick: {
+                    lineColor: '#59869c',
+                    lineWidth: 2,
+                    lineStyle: 'dotted',
+                    size: 20
+                },
+                guide: {
+                    lineColor: "#607D8B",
+                    lineStyle: 'solid',
+                    alpha: 0.3,
+                    backgroundColor: "#c5c5c5 #718eb4"
+                }
+            },
+            "series": [{
+                "values": [6, 51, 22, 21]
+            }]
+        };
+    </script>
+</body>
+
