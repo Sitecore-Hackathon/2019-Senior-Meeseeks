@@ -26,7 +26,7 @@ This module has the following dependencies:
 ## Installation
 
 
-1. Use the Sitecore Installation wizard to install the [packages](#https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/tree/master/sc.package) contained in the link.
+1. Use the Sitecore Installation wizard to install the [packages](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/tree/master/sc.package) contained in the link.
 
 
 ## Configuration
