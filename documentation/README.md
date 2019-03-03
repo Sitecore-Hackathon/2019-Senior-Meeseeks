@@ -28,7 +28,7 @@ This module has the following dependencies:
 ## Installation
 
 
-1. Use the Sitecore Installation wizard to install the [packages](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/tree/master/sc.package) contained in the link.
+1. Use the Sitecore Installation wizard to install the [package](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/tree/master/sc.package) contained in the link.
 
 
 ## Configuration
@@ -45,10 +45,8 @@ The intention is that the user simulates browsing though these products in order
 
 ![Image](https://github.com/Sitecore-Hackathon/2019-Senior-Meeseeks/blob/master/documentation/images/Capture.JPG)
 
-Once there are 
+Once there are enough interactions the machine learning server will return a gamification profile to be stored on the users profile via XConnect, this profile could be user to have personalized content to be displayed!
 
 ## Video
-
-Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
 
 [![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
